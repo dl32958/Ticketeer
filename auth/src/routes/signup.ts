@@ -1,11 +1,9 @@
 import express, { Request, Response } from 'express';
 import { body, validationResult } from 'express-validator';
 import jwt from 'jsonwebtoken';
+import { validateRequest, DatabaseConnectionError, BadRequestError } from '@dlticketeer/common';
 
-import { validateRequest } from '../middlewares/validate-request';
 import { User } from '../models/user';
-import { DatabaseConnectionError } from '../errors/database-connection-error';
-import { BadRequestError } from '../errors/bad-request-error';
 
 const router = express.Router();
 
