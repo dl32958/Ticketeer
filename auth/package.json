@@ -7,7 +7,7 @@
     "start": "ts-node-dev src/index.ts",
     "test": "jest --watchAll --no-cache"
   },
-  "jest":{
+  "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
     "setupFilesAfterEnv": [
@@ -18,6 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@dlticketeer/common": "^1.0.3",
     "@types/cookie-session": "^2.0.49",
     "@types/express": "^5.0.1",
     "@types/jsonwebtoken": "^9.0.9",
