@@ -9,10 +9,10 @@ const start = async () => {
     if (!process.env.MONGO_URI) {
         throw new Error('MONGO_URI must be defined');
     }
-
+    
     try {
         await mongoose.connect(process.env.MONGO_URI);
-        console.info('auth connected to MongoDB');
+        console.info('tickets connected to MongoDB');
     } catch (err) {
         console.error(err);
     }
