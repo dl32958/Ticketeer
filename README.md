@@ -14,6 +14,7 @@ This app enables users to:
 This application is built using a microservices approach. The system consists of five core services, and each service is independently deployed in Docker containers and orchestrated with Kubernetes. Services communicate asynchronously via an event bus to ensure decoupled, event-driven messaging. MongoDB is used as the database for persistent storage. Redis is used by the expiration service for managing order expiration.
 
 The diagram below illustrates the overall architecture:
+![System Architecture](diagram/ticketeer_architecture.jpg)
 
 ### Core Services
 - auth: Handles user registration, login, and authentication
