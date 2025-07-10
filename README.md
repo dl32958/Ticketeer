@@ -51,4 +51,25 @@ The project employs a CI/CD pipeline powered by GitHub Actions. Automated workfl
 - Supertest
 - GitHub Actions
 
-## 📦Getting Started
+## 📦 Getting Started
+
+### Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop) with Kubernetes enabled  
+- [Skaffold](https://skaffold.dev/docs/install/) installed
+
+### Run the App
+
+```bash
+git clone https://github.com/dl32958/Ticketeer.git
+cd Ticketeer
+skaffold dev
+```
+
+### Required Kubernetes Secret
+
+Before running `skaffold dev`, you must create the following Kubernetes secret:
+
+```bash
+kubectl create secret generic jwt-secret --from-literal=JWT_KEY=your_jwt_key
+```
