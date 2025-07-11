@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@dlticketeer/common": "^1.0.6",
+    "@dlticketeer/common": "^1.0.20",
     "@types/cookie-session": "^2.0.49",
     "@types/express": "^5.0.1",
     "@types/jsonwebtoken": "^9.0.9",
@@ -29,6 +29,7 @@
     "express-validator": "^7.2.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.2",
+    "node-nats-streaming": "^0.3.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.2"
   },

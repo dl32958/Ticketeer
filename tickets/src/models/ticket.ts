@@ -33,7 +33,7 @@ const ticketSchema = new mongoose.Schema({
 }, {
     toJSON: {
         // ret is object to be turned into JSON
-        transform(doc, ret) {
+        transform(doc, ret:any) {
             ret.id = ret._id;
             delete ret._id;
             delete ret.__v;
