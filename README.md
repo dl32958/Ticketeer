@@ -17,11 +17,11 @@ The diagram below illustrates the overall architecture:
 ![System Architecture](diagram/ticketeer_architecture.jpg)
 
 ### Core Services
-- auth: Handles user registration, login, and authentication
-- tickets: Manages ticket creation, editing, and locking logic
+- auth: Handles everything related to user, e.g. user signup/signin/signout and authentication
+- tickets: Manages ticket creation, editing, and locking logic (knows whether a ticket can be updated)
 - orders: Handles order creation, status updates, and association with tickets
 - expiration: Monitors orders and cancels them after 15 minutes if unpaid
-- payments: Processes Stripe payments and updates order status accordingly
+- payments: Handles credit card payments. Cancels order if payments fails, completes if payment succeeds
 ### Core Components
 - Client Service: Next.js frontend app
 - Backend Services: Node.js microservices for tickets, orders, auth, payments, and expiration
